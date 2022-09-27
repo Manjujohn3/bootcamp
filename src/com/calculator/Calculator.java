@@ -34,8 +34,13 @@ public class Calculator {
                 case 3:
                     System.out.println(a*b);
                     break;
-                case 4:
-                    System.out.println(a/b);
+                case 4:try {
+                    System.out.println(a / b);
+                }
+                catch(ArithmeticException e)
+                {
+                    System.out.println(e);
+                }
                     break;
                 case 5:
                     System.exit(0);
